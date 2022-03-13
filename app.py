@@ -2,6 +2,7 @@ import PySimpleGUI as sg
 
 # Create windows and layout
 def login_window():
+    sg.theme('Reddit')
     layout = [
         [sg.Text('Name')], 
         [sg.Input()], 
@@ -11,7 +12,7 @@ def login_window():
     return sg.Window('Login', layout = layout, finalize = True)
 
 def window_request():
-    sg.theme('Dark')
+    sg.theme('Reddit')
     layout = [
         [sg.Text('Send request')],
         [sg.Checkbox('Pizza Pepperoni', key = 'pizza1'),
